@@ -1,0 +1,429 @@
+/*Import the fonts used*/
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Custom properties*/
+:root {
+    --dark-color: #112340;
+    --grey-color:#7D8797;
+    --light-grey-color:#F6F5FB;
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+    --green-color: #41C1A6;
+    --yellow-color:#FFCE5D;
+}
+
+/* Global Style */
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Asap", sans-serif;
+    font-size: 1.8rem;
+    color: var(--dark-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+
+/* Awal Navbar */
+
+.nav{
+    width: 85%;
+    margin: 6rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 35rem;
+    display: flex ;
+    justify-content: space-between;
+}
+
+.nav-links{
+    color:var(--grey-color);
+    transition:color .2s
+}
+
+.nav-links:hover{
+    color: var(--dark-color);
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn-wrap{
+    position: relative;
+}
+.btn-line{
+    width: 15rem;
+    height: 5rem;
+    background-color: var(--green-color);
+    border-radius: 1rem;
+}
+.cta-btn{
+    cursor: pointer;
+    position: absolute;
+    bottom: .5rem;
+    right: .4rem;
+    width: 15rem;
+    height: 5rem;
+    font-family: "Asap", sans-serif;
+    border: .2rem solid var(--dark-color);
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    transform: translateZ(1);
+}
+.hamburgers-menu{
+    display: none;
+    font-size: 2.6rem;
+}
+
+
+#pricing{
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+/* Akhir Navbar */
+
+.main-text{
+    margin-top: 10rem;
+}
+
+.main-text .title{
+    font-size: 4.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main-text .title2{
+    margin-top: .5rem;
+}
+
+.main-text .sub-title{
+    margin-top: 2rem;
+    color: var(--grey-color);
+    text-align: center;
+}
+
+.price-list{
+    display: flex;
+    margin-top:7rem;
+    justify-content: center;
+}
+
+.starter{
+    margin-right: 5rem;
+    width: 32rem;
+    border: .2rem solid var(--dark-color);
+    border-radius: 2rem;
+    height: 46rem;
+}
+
+.platinum{
+    margin-right: 5rem;
+    width: 32rem;
+    border: .2rem solid var(--dark-color);
+    border-radius: 2rem;
+    height: 58.5rem;
+    /* transform: translateZ(-999); */
+    position: absolute;
+}
+
+.category-name{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 4rem;
+}
+.price-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.price{
+    text-align: center;
+    font-size: 4.6rem;
+    margin-top: 1.6rem;
+}
+
+.year{
+    margin-bottom: .8rem;
+    margin-left: .2rem;
+}
+
+.line{
+    height: .2rem;
+    width: 25rem;
+    background-color: var(--dark-color);
+    margin: 2.5rem auto;
+}
+
+.starter-features{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 3rem;
+    height: 15rem;
+}
+
+.platinum-features{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 3rem;
+    height: 27rem;
+}
+
+.list img{
+    transform: translateY(4px);
+    margin-right: 1rem;
+}
+
+.second-btn{
+    margin-top: 3.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    width: 25rem;
+    height: 5.5rem;
+    font-family: "Asap", sans-serif;
+    border: .2rem solid var(--dark-color);
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    color: var(--dark-color);
+}
+
+.platinum-wrap{
+    position: relative;
+    width: 32rem;
+}
+
+.platinum-btn-wrap{
+    position: relative;
+    width: 25rem;
+    margin-right:auto ;
+    margin-left: auto;
+}
+
+.platinum-bg{
+    position: absolute;
+    width: 32rem;
+    height: 58.5rem;
+    background-color: var(--yellow-color);
+    border-radius: 2rem;
+    top: 1rem;
+    left: 1rem;
+}
+
+.btn-bg{
+    position: absolute;
+    width: 25rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    top: 4.1rem;
+    left: 1rem;
+}
+
+.platinum-btn{
+    position: absolute;
+}
+
+.company{
+    margin-top: 27rem;
+    margin-bottom: 10rem;
+}
+
+.company p{
+    font-weight: 500;
+    color: var(--grey-color);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.company-logo{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:1080px){
+    .nav-list{
+        width: 30rem;
+    }
+
+    .btn-wrap{
+        transform: scale(.9);
+    }
+
+    .company-logo{
+        display: grid;
+        grid-template-columns: repeat(6,10rem);
+        grid-template-rows: repeat(2,10rem);
+        justify-items: center;
+        align-items: center;
+    }
+
+    #google{
+        grid-column: 1/3;
+    }
+
+    #dropbox{
+        grid-column: 3/5;
+    }
+
+    #facebook{
+        grid-column: 5/7;
+    }
+    #spotify{
+        grid-column: 1/4;
+    }
+    #microsoft{
+        grid-column: 4/7;
+    }
+}
+
+@media(max-width:785px){
+
+    .nav-list{
+        display: none;
+    }
+    /* .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--green-color);
+        transform: translateZ(9999999999);
+
+    } */
+
+    /* .nav-links:hover{
+        color: var(--dark-color);
+        cursor: pointer;
+        font-weight: 500;
+    }
+    .nav-links{
+        text-transform: uppercase;
+        color: var(--dark-color);
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    .nav-links:not(:last-child){
+        margin-bottom:2rem ;
+    } */
+
+
+    .hamburgers-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburgers-menu .fa-times{
+        display: none;
+    }
+
+    .btn-wrap{
+        display: none;
+    }
+
+    .main-text .title{
+        font-size: 3.8rem;
+    }
+
+    .main-text .sub-title{
+        font-size: 1.65rem;
+    }
+
+    .price-list{
+        height: 100rem;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 60rem 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .starter{
+        grid-row: 1/2;
+        margin-right: 0;
+    }
+
+    .platinum-wrap{
+        bottom: 20rem;
+        grid-row: 2/3;
+    }
+
+    .company{
+        margin-top: 30rem;
+    }
+
+    .company-logo{
+        display: flex;
+        flex-direction: column;
+        height: 35rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
